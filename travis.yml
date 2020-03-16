@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t finn/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run finn/docker-react yarn test -- --coverage
