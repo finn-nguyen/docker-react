@@ -6,6 +6,7 @@ before_install:
 script:
   - docker run finn/docker-react yarn test --coverage --watchAll=false
 deploy:
+  provider: heroku
   api_key:
     secure: hl1sp4j1kujNAtu0CMMlyVKkRavKurpGBU4GFtNrtpCJkSTKzb0Tj5ygKt1ma+nlEvbQdT32agQzVlmwyPsdfxzfHCvjvgkIB503pm4B73pGOID4YNmoHb868mtLuwjRbOnXaFSahYYnOHdKEwQ98fzB/g//t7l/kfB8QBi9PC/jrzhaEPnO/runhJ/FR/yDQGWVT5DTyjDZAzPELdbKeOAdD1ghjtNBocAUip8Pgy308sbI0i2VwsjE6Cx5ycJPUmPlbUScu5Bwtr+xfGC7c5EnoUPq+KMySYAaJ8PgWP5dI7z8+qSQnnF+TDU42QrbBOEDH7akoEQ/GRXnM6tUZfDe5cmOAUPYG3Ty9aWfA2yYBEDAPL/9RjnIKo3EnTiy9Q9P3Z1e2C2RLs2j5uxuw55pGMhZqBgaVffbqOBIGfm2ApDe8KrRibi8fD5pOmtY2FUsYN69L06RZ74jeSw+AfMhFMSWRH6wR7cuHiZrZSz6ilFWn8Ulz4J+QupAYJZZFQISKgvTw+PHCzC6NvZWK5PVnxtg1sxVy+wshkdwUJyhI8E/UP6OnegaTbAaedFJjq8bRQsoTve10kqRyOm11FArzNuB9w5UXd/WIOiLonuAFaD6lkXPq5OiNPEfJFYA3LL34vUad3EyxNbUw0Wv4lYI5mP1iEnB6eq/kMc0oYo=
   app: react-docker
